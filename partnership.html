@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Definición del título de la página -->
+   <title>Contact</title>
+   
+   <!-- Configuración del juego de caracteres utilizado en la página -->
+   <meta charset="utf-8">
+   
+   <!-- Descripción de la página para motores de búsqueda -->
+   <meta name="description" content="Mood Swings Gallery Sitio web oficial, disfruta de tu estado de ánimo">
+   
+   <!-- Icono que se mostrará en la pestaña del navegador -->
+   <link rel="icon" type="image/x-icon" href="Images/icon.ico">
+   
+   <!-- Enlace al archivo de estilo CSS para dar formato a la página -->
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   
+   <!-- Configuración de la vista en dispositivos móviles y escala inicial -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <!-- Encabezado de la página con enlace único que lleva a la página principal -->
+   <header>
+      <a class="unique-link" href="index.html">
+         <h1>Mood Swings Gallery</h1>
+      </a>
+   </header>
+
+   <!-- Barra de navegación con enlaces a diversas secciones de la página -->
+   <nav>
+      <ul class="nav">
+         <li><a class="nav-link" href="index.html">Main</a></li>
+         <li><a class="nav-link2" href="artworks.html">Gallery</a></li>
+         <li><a class="nav-link3" href="artists.html">Artists</a></li>
+         <li><a class="nav-link4" href="partnership.html">Contact</a></li>
+         <li><a class="nav-link5" href="about.html">About</a></li>
+      </ul>
+   </nav>
+
+   <!-- Sección principal de la página con un formulario de contacto -->
+   <section>
+      <article>
+         <div class="contact-form">
+            <!-- Encabezado del formulario -->
+            <h2>Contact us</h2>
+            
+            <!-- Formulario con campos para nombre, email, mensaje y opciones de contacto -->
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:⠀⠀</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:⠀⠀</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <input type="message" id="message" name="message" required>
+                </div>
+
+                <!-- Grupo de radio botones para seleccionar el estado de asociación -->
+                <div class="status">
+                  <p>Choose your partnership status: </p>
+                  <input type="radio" name="status"> Customer <br>
+                  <input type="radio" name="status"> Employee<br>
+                  <input type="radio" name="status"> Unemployed Artist <br>
+                </div>
+
+                <!-- Lista desplegable para seleccionar el motivo de contacto -->
+                <div class="selection-list">
+                  <p class="selection-ask">Please choose a contact reason:</p>
+                  <select>
+                     <option value="Buy">I'm interested in buying an artwork</option>
+                     <option value="Sell">I'm interested in selling my artwork</option>
+                     <option value="Sell">Other questions</option>
+                  </select>
+                </div>
+                
+                <!-- Botón de envío del formulario -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+      </article>
+   </section>
+</body>
+
+<!-- Pie de página de la página web con información de derechos de autor y enlaces adicionales -->
+<footer class="foot">
+   <!-- Aviso de derechos de autor con el año actual y el nombre de la galería -->
+   <p>&copy; 2023 Mood Swings Gallery</p>
+   
+   <!-- Lista de enlaces a las páginas de política de privacidad y términos de servicio -->
+   <ul>
+      <a href="privacy.html">Privacy Policy</a></li>
+      <a href="terms.html">Terms of Service</a></li>
+   </ul>
+</footer>
+
+</html>

@@ -1,0 +1,225 @@
+/* Fondo del body, ajustes del fondo y del fuente */
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+    margin: 0;
+    padding: 0;
+    background-color: #000000b0;
+    background-image: url('Images/background.jpg');
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    color:#ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+/* Ajustes del header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed center;
+    top: 0;
+    width: 100%;
+}
+/* Nombre de la página */
+h1 {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* Ajustes del panel de navegación */
+nav {
+    background-color: #000000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+/* Ajustes del panel de navegación para hacer animación zoom */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px;
+    font-weight: bold;
+    position: fixed center;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 24px;
+    transition: 300ms;
+    text-align: center; 
+}
+/* Ajustes del panel de navegación para hacer animación zoom y cambio del color al rojo*/
+.nav li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 24px;
+}
+/* Ajustes del panel de navegación para hacer animación del cambio del color */
+.nav a:hover {
+    color: #810000;
+    transform: scale(1.2); 
+}
+/* no me acuerdo, pero sirve para algo */
+section {
+    height: 100%;
+}
+/* Ajustes class article (Para textos sobre todo) */
+article {
+    padding: 100;
+    width: 100%;
+    background-color: #000000b0;
+    height: 100%;
+    color:#fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: Copperplate, Papyrus, fantasy;
+    padding: 0px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+/* Ajustes para el boton de la página index */
+.button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    transition: 300ms;
+    text-align: center; 
+}
+/* Ajustes para hacer la animación del cambio de color del botón */
+.button:hover {
+    color: #810000; /* Изменяем цвет при наведении на ссылку */
+}
+/* Parámetros del vínculo */
+.unique-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* ns */
+.article {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Estílos para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    background-color: #000000b0;
+    margin-bottom: 100px;
+}
+/* Estílos para las imagenes */
+.image {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+/* Animación zoom para la imagen  */
+.image:hover {
+    transform: scale(1.05);
+}
+/* Animación zoom para la imagen  */
+.image img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Animación zoom para la imagen  */
+.image img::after {
+    content: attr(alt);
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0;
+    background: #000000b3;
+    color: white;
+}
+/* Parámetros para class policy de la página privacy.html */
+.policy {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1800px;
+    text-decoration: none;
+}
+/* ns */
+.form {
+    font-weight: bold;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 25px;
+}
+/* Parámetros para forma de contacto */
+.contact-form {
+    font-weight: bold;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 25px;
+}
+/* ns */
+.status {
+    display: block;
+    text-align: left;
+    margin-left: 790px;
+    margin-top: 20px;
+}
+/* Parametros para el footer */
+.foot {
+    font-family: "Lucida Console", "Courier New";
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+/* Parametros para el texto de la página terms.html */
+.terms-text {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Parametros para la descripción de alguna página */
+.description {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Parámetros para el contenedor artist */
+.artist-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+/* Parámetros para la class de la biografías de artistas */
+.artist-info {
+    flex: 10;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    margin-bottom: 200px;
+}
+/* Parámetros para la imagen de artistas */
+.artist-image {
+    flex: 1;
+}
+/* ns */
+.fon {
+    background-color: #000000b0;
+}
